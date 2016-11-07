@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html ng-app="driverHiring">
+  <head>
+    <script src ="  https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.3/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-sanitize.js"></script>
+    <script type="text/javascript" src="js/driverHiringController.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<body ng-controller = "driverHiringController as dhc">
+
+<div  class="section nobg topmargin-lg nobottommargin">
+  <div class="container clearfix" >
+
+    <div align = "center">
+
+      <img src="http://valleyroyals.org/wp-content/uploads/2012/08/Interested-in-Joining-button.jpg" alt="Image" data-animate="fadeInLeft">
+
+    </div>
+
+    <div align = "center">
+     <form role = "form" ng-submit = "dhc.driverApplySubmit()">
+
+      <p>姓名<span>*</span></p>
+      <input type="text" size = "40" ng-model="dhc.applyDriver.name">
+      <p>住址<span>*</span></p>
+      <input  type="text"size = "40" ng-model="dhc.applyDriver.address">
+      <p>手机<span>*</span></p>
+      <input  type="text" size = "40" ng-model="dhc.applyDriver.tel" >
+      <p>邮箱<span>*</span></p>
+      <input  type="text" size = "40" ng-model="dhc.applyDriver.email" >
+      <p>身份</p>
+      <div>
+        <label ng-repeat= "status in dhc.statusOptions">
+         <input type = "checkbox"
+                ng-model = "status.selected" ng-change="dhc.setStatus()"
+                ng-click="dhc.statusSelection($index, dhc.statusOptions)">
+                {{status.optionName}}
+        </input>
+         </label>
+      </div>
+      <p>有无工卡</p>
+      <div>
+        <label ng-repeat= "sin in dhc.sinOptions">
+          <input type = "checkbox"
+                ng-model = "sin.selected" ng-change="dhc.setSin()"
+                ng-click="dhc.sinSelection($index, dhc.sinOptions)" >
+                {{sin.optionName}}
+          </input>
+        </label>
+      </div>
+      <p>有无服务行业经验(例如送餐,服务员,客服,销售等)</p>
+        <div>
+          <label ng-repeat= "experience in dhc.experienceOptions">
+            <input type = "checkbox"
+                  ng-model = "experience.selected" ng-change="dhc.setExperience()"
+                  ng-click="dhc.experienceSelection($index, dhc.experienceOptions)">
+                  {{experience.optionName}}
+            </input>
+          </label>
+
+        </div>
+      <p>工作区域</p>
+      <div>
+        <label ng-repeat= "area in dhc.areaOptions">
+          <input type = "checkbox"
+                ng-model = "area.selected" ng-change="dhc.setArea()">
+                {{area.optionName}}<br>
+          </input>
+        </label>
+      </div>
+      <p>期望的工作时间</p>
+      <div>
+        <label ng-repeat= "hour in dhc.hourOptions">
+          <input type = "checkbox"
+                ng-model = "hour.selected" ng-change="dhc.setHour()"  >
+                <span style="white-space:pre-wrap;"> {{hour.optionName}}</span><br>
+          </input>
+        </label>
+      </div>
+      <div>
+        <p>
+          自我评价
+        </p>
+      <textarea  ng-model="dhc.applyDriver.comments" maxlength="1000" cols="40" rows="10"></textarea>
+      </div>
+      <input type="submit" ng-click= "dhc.outPutDriver()">
+     </form>
+
+    </div>
+  </body>
+</html>
