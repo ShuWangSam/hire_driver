@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
@@ -34,15 +33,38 @@
 	<title>Home - Restuarant | Canvas</title>
 
 	<style>
-	  @font-face {
-	  		font-family: zwyt;
-	  		src: url(https://www.chanmao.ca/font/fzyt.TTF);
-	  	}
+  @font-face {
+      font-family: fzzy;
+      src: url(css/fonts/方正综艺简体.TTF);
+    }
+  @font-face {
+        font-family: wryh;
+        src: url(css/fonts/微软雅黑.ttf);
+      }
+  @font-face {
+        font-family: wryhb;
+        src: url(css/fonts/微软雅黑粗体.ttf);
+      }
+  @font-face{
+    font-family: gotham;
+    src:url(css/fonts/GothamHTF-Book.ttf);
+  }
+  @font-face{
+    font-family: lanting;
+    src:url(css/fonts/Lantinghei.ttc);
+  }
+  @font-face{
+    font-family: clanprobk;
+    src:url(css/fonts/ufonts.com_clanpro-book.ttf);
+  }
+  @font-face{
+    font-family: clanprobd;
+    src:url(css/fonts/ufonts.com_clanpro-bold.ttf);
+  }
 		.revo-slider-emphasis-text {
 			font-size: 64px;
 			font-weight: 700;
 			letter-spacing: -1px;
-			font-family: 'Raleway', sans-serif;
 			padding: 15px 20px;
 			border-top: 2px solid #FFF;
 			border-bottom: 2px solid #FFF;
@@ -50,7 +72,6 @@
 
 		.revo-slider-desc-text {
 			font-size: 20px;
-			font-family: 'Lato', sans-serif;
 			width: 650px;
 			text-align: center;
 			line-height: 1.5;
@@ -60,8 +81,7 @@
 			font-size: 16px;
 			font-weight: 400;
 			letter-spacing: 3px;
-			font-family: 'Raleway', sans-serif;
-		}
+    		}
 		.tp-video-play-button { display: none !important; }
 
 		.tp-caption { white-space: nowrap; }
@@ -83,46 +103,33 @@
 				- THEMEPUNCH BANNER -
 			#################################
 			-->
-			<div class="tp-banner-container">
+			<div class="full-screen">
 				<div class="tp-banner" >
 					<ul>    <!-- SLIDE  -->
-						<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/thumb/2.jpg" data-delay="12000"  data-saveperformance="off" data-title="Delicious Recipes">
+						<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/thumb/1.png" data-delay="5000"  data-saveperformance="off" data-title="馋猫送餐">
 							<!-- MAIN IMAGE -->
-							<img src="images/slider/2.jpg"  alt="kenburns1"  data-bgposition="left center" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right center">
+							<img src="images/slider/1.png"  alt="kenburns1"  data-bgposition="23%" data-kenburns="on" data-duration="5000" data-ease="step-end;" data-scalestart="130" data-scaleend="100" data-bgpositionend="40%">
 							<!-- LAYERS -->
 
 							<!-- LAYER NR. 2 -->
-							<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-							data-x="600"
-							data-y="215"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
-							data-start="1000"
-							data-easing="easeOutQuad"
-							data-splitin="none"
-							data-splitout="none"
-							data-elementdelay="0.01"
-							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3;">Finger Lickin' Good</div>
 
 							<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-							data-x="597"
-							data-y="230"
+							data-x="450"
+							data-y="700"
 							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 							data-speed="800"
 							data-start="1200"
 							data-easing="easeOutQuad"
-							data-splitin="none"
+							data-splitin="right"
 							data-splitout="none"
 							data-elementdelay="0.01"
 							data-endelementdelay="0.1"
 							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 60px;">Delicious Recipes</div>
+							data-endeasing="Power4.easeIn" style="z-index: 3; font-size: 5.5em; font-family:fzzy;font-weight:normal">专业的送餐团队</div>
 
 							<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
-							data-x="600"
-							data-y="340"
+							data-x="450"
+							data-y="810"
 							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 							data-speed="800"
 							data-start="1400"
@@ -132,111 +139,103 @@
 							data-elementdelay="0.01"
 							data-endelementdelay="0.1"
 							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;">Welcome to the Home of Fabulously Tasty homemade food that's gonna make you forget your mom.!</div>
+							data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;font-size:2.9em; font-weight:normal;font-family:gotham;">We Have The Professional</div>
 
-							<div class="tp-caption customin ltl tp-resizeme"
-							data-x="600"
-							data-y="450"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
-							data-start="1550"
-							data-easing="easeOutQuad"
-							data-splitin="none"
-							data-splitout="none"
-							data-elementdelay="0.01"
-							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-white button-light button-border button-large button-rounded tright nomargin"><span>Browse Menu</span> <i class="icon-angle-right"></i></a></div>
+              <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
+              data-x="450"
+              data-y="860"
+              data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+              data-speed="800"
+              data-start="1400"
+              data-easing="easeOutQuad"
+              data-splitin="none"
+              data-splitout="none"
+              data-elementdelay="0.01"
+              data-endelementdelay="0.1"
+              data-endspeed="1000"
+              data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 550px; white-space: normal;font-size:2.9em; font-weight:normal;font-family:gotham;">Delivery Team</div>
+
+
 
 						</li>
 						<!-- SLIDE  -->
-						<li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/thumb/1.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Book your Tables">
+						<li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/thumb/2.png" data-delay="5000 "  data-saveperformance="off"  data-title="广泛的选择">
 							<!-- MAIN IMAGE -->
-							<img src="images/slider/1.jpg"  alt="kenburns6"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="120" data-scaleend="100" data-bgpositionend="center center">
+							<img src="images/slider/2.png"  alt="kenburns6"  data-bgposition="center top" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="120" data-scaleend="100" data-bgpositionend="center center">
 							<!-- LAYERS -->
 
 							<!-- LAYER NR. 2 -->
-							<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-							data-x="0"
-							data-y="215"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
+
+							<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+							data-x="80"
+							data-y="450"
+							data-customin="x:0;y:1000;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+							data-speed="100"
 							data-start="1000"
 							data-easing="easeOutQuad"
 							data-splitin="none"
 							data-splitout="none"
 							data-elementdelay="0.01"
 							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3; color: #222;">Easy Seat Reservations</div>
+							data-endspeed="100 "
+							data-endeasing="Power4.easeIn" style=" width:100%;z-index: 4; max-width: 700px;color: #ffffff;font-family:fzzy; font-weight:normal;font-size: 5.5em;">多伦多首家最大的</div>
 
-							<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-							data-x="-3"
-							data-y="230"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
-							data-start="1200"
-							data-easing="easeOutQuad"
-							data-splitin="none"
-							data-splitout="none"
-							data-elementdelay="0.01"
-							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3; color: #222; font-size: 60px;">Book your Tables</div>
+              <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
+              data-x="80"
+              data-y="660"
+              data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+              data-speed="800"
+              data-start="1000"
+              data-easing="easeOutQuad"
+              data-splitin="none"
+              data-splitout="none"
+              data-elementdelay="0.01"
+              data-endelementdelay="0.1"
+              data-endspeed="800"
+              data-endeasing="Power4.easeIn" style="z-index: 4; color: #ffffff; max-width: 750px; white-space: normal;font-size: 2.9em; font-family:gotham;">The Largest Chinese Food Delivery</div>
 
-							<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
-							data-x="0"
-							data-y="340"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
-							data-start="1400"
-							data-easing="easeOutQuad"
-							data-splitin="none"
-							data-splitout="none"
-							data-elementdelay="0.01"
-							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3; color: #222; max-width: 550px; white-space: normal;">Try our Mobile App to Reserve Tables in our Restaurant to avoid the Queue.</div>
+              <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
+              data-x="80"
+              data-y="710"
+              data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+              data-speed="800"
+              data-start="1000"
+              data-easing="easeOutQuad"
+              data-splitin="none"
+              data-splitout="none"
+              data-elementdelay="0.01"
+              data-endelementdelay="0.1"
+              data-endspeed="800"
+              data-endeasing="Power4.easeIn" style="z-index: 4; color: #ffffff; max-width: 700px; white-space: normal;font-size: 2.9em; font-family:gotham;">Platform in Toronto</div>
 
-							<div class="tp-caption customin ltl tp-resizeme"
-							data-x="0"
-							data-y="450"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
-							data-start="1550"
-							data-easing="easeOutQuad"
-							data-splitin="none"
-							data-splitout="none"
-							data-elementdelay="0.01"
-							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-3d button-black button-large button-rounded tright nomargin" style="color: #FFF;"><span>Reserve Now</span> <i class="icon-angle-right"></i></a></div>
+              <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
+              data-x="80"
+              data-y="550"
+              data-customin="x:0;y:1000;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+              data-speed="800"
+              data-start="1000"
+              data-easing="easeOutQuad"
+              data-splitin="none"
+              data-splitout="none"
+              data-elementdelay="0.01"
+              data-endelementdelay="0.1"
+              data-endspeed="800"
+              data-endeasing="Power4.easeIn" style=" width:100%;z-index: 4; max-width: 700px;color: #ffffff;font-family:fzzy; font-weight:normal;font-size: 5.5em;">亚洲餐品订餐配送平台<div>
+
+
 
 						</li>
 						<!-- SLIDE  -->
-						<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/thumb/3.jpg" data-delay="12000"  data-saveperformance="off"  data-title="Full Featured Menu">
+						<li class="dark" data-transition="slideleft" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/thumb/3.png" data-delay="5000"  data-saveperformance="off"  data-title="家乡的味道">
 							<!-- MAIN IMAGE -->
-							<img src="images/slider/3.jpg"  alt="kenburns3"  data-bgposition="left top" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom">
+							<img src="images/slider/3.png"  alt="kenburns3"  data-bgposition="20%" data-kenburns="on" data-duration="12000" data-ease="Linear.easeNone" data-scalestart="120" data-scaleend="100" data-bgpositionend="50% ">
 							<!-- LAYERS -->
 
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-							data-x="440"
-							data-y="215"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
-							data-start="1000"
-							data-easing="easeOutQuad"
-							data-splitin="none"
-							data-splitout="none"
-							data-elementdelay="0.01"
-							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3;">Wide Array of Options</div>
 
 							<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-							data-x="287"
-							data-y="230"
+							data-x="320"
+							data-y="750"
 							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 							data-speed="800"
 							data-start="1200"
@@ -246,11 +245,11 @@
 							data-elementdelay="0.01"
 							data-endelementdelay="0.1"
 							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3;">Full Featured Menus</div>
+							data-endeasing="Power4.easeIn" style="z-index: 3;	font-family:fzzy; color:#ffffff;font-size: 5.5em;font-weight:normal;">我们传递家乡的味道</div>
 
 							<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
-							data-x="245"
-							data-y="340"
+							data-x="310"
+							data-y="850"
 							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
 							data-speed="800"
 							data-start="1400"
@@ -260,470 +259,192 @@
 							data-elementdelay="0.01"
 							data-endelementdelay="0.1"
 							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;">Choose from Continental, Oriental, Italian or Thai Cuisines. Or Simply create your own Mix.</div>
+							data-endeasing="Power4.easeIn" style="z-index: 3; color:#ffffff;max-width: 710px;font-family:gotham; white-space: normal;font-size: 2.9em;font-weight:normal;">We Delivery The Hometown Taste</div>
 
-							<div class="tp-caption customin ltl tp-resizeme"
-							data-x="496"
-							data-y="450"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-							data-speed="800"
-							data-start="1550"
-							data-easing="easeOutQuad"
-							data-splitin="none"
-							data-splitout="none"
-							data-elementdelay="0.01"
-							data-endelementdelay="0.1"
-							data-endspeed="1000"
-							data-endeasing="Power4.easeIn" style="z-index: 3;"><a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>Start Now</span> <i class="icon-angle-right"></i></a></div>
 						</li>
 					</ul>
 				</div>
+
 			</div>
 
 		</section>
 
-		<!-- Header
-		============================================= -->
-<!--	<	<header id="header">
-
-			<div id="header-wrap">
-
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo-resto.png" alt="Canvas Logo"></a>
-						<a href="https://www.chanmao.ca" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-				<!--	<nav id="primary-menu" class="style-5">
-
-						<ul class="norightborder norightpadding norightmargin">
-							<li class="current"><a href="#"><div><i class="icon-home2"></i>Home</div></a>
-								<ul>
-									<li><a href="index-corporate.html"><div>Home - Corporate</div></a>
-										<ul>
-											<li><a href="index-corporate.html"><div>Corporate - Layout 1</div></a></li>
-											<li><a href="index-corporate-2.html"><div>Corporate - Layout 2</div></a></li>
-											<li><a href="index-corporate-3.html"><div>Corporate - Layout 3</div></a></li>
-											<li><a href="index-corporate-4.html"><div>Corporate - Layout 4</div></a></li>
-										</ul>
-									</li>
-									<li><a href="index-portfolio.html"><div>Home - Portfolio</div></a>
-										<ul>
-											<li><a href="index-portfolio.html"><div>Portfolio - Layout 1</div></a></li>
-											<li><a href="index-portfolio-2.html"><div>Portfolio - Layout 2</div></a></li>
-											<li><a href="index-portfolio-3.html"><div>Portfolio - Masonry</div></a></li>
-											<li><a href="index-portfolio-4.html"><div>Portfolio - AJAX</div></a></li>
-										</ul>
-									</li>
-									<li><a href="index-blog.html"><div>Home - Blog</div></a>
-										<ul>
-											<li><a href="index-blog.html"><div>Blog - Layout 1</div></a></li>
-											<li><a href="index-blog-2.html"><div>Blog - Layout 2</div></a></li>
-											<li><a href="index-blog-3.html"><div>Blog - Layout 3</div></a></li>
-										</ul>
-									</li>
-									<li><a href="index-shop.html"><div>Home - Shop</div></a>
-										<ul>
-											<li><a href="index-shop.html"><div>Shop - Layout 1</div></a></li>
-											<li><a href="index-shop-2.html"><div>Shop - Layout 2</div></a></li>
-										</ul>
-									</li>
-									<li><a href="index-magazine.html"><div>Home - Magazine</div></a>
-										<ul>
-											<li><a href="index-magazine.html"><div>Magazine - Layout 1</div></a></li>
-											<li><a href="index-magazine-2.html"><div>Magazine - Layout 2</div></a></li>
-											<li><a href="index-magazine-3.html"><div>Magazine - Layout 3</div></a></li>
-										</ul>
-									</li>
-									<li><a href="landing.html"><div>Home - Landing Page</div></a>
-										<ul>
-											<li><a href="landing.html"><div>Landing Page - Layout 1</div></a></li>
-											<li><a href="landing-2.html"><div>Landing Page - Layout 2</div></a></li>
-											<li><a href="landing-3.html"><div>Landing Page - Layout 3</div></a></li>
-											<li><a href="landing-4.html"><div>Landing Page - Layout 4</div></a></li>
-											<li><a href="landing-5.html"><div>Landing Page - Layout 5</div></a></li>
-										</ul>
-									</li>
-									<li><a href="index-fullscreen-image.html"><div>Home - Full Screen</div></a>
-										<ul>
-											<li><a href="index-fullscreen-image.html"><div>Full Screen - Image</div></a></li>
-											<li><a href="index-fullscreen-slider.html"><div>Full Screen - Slider</div></a></li>
-											<li><a href="index-fullscreen-video.html"><div>Full Screen - Video</div></a></li>
-										</ul>
-									</li>
-									<li><a href="index-onepage.html"><div>Home - One Page</div></a>
-										<ul>
-											<li><a href="index-onepage.html"><div>One Page - Default</div></a></li>
-											<li><a href="index-onepage-2.html"><div>One Page - Submenu</div></a></li>
-											<li><a href="index-onepage-3.html"><div>One Page - Dots Style</div></a></li>
-										</ul>
-									</li>
-									<li><a href="index-wedding.html"><div>Home - Wedding</div></a></li>
-									<li><a href="index-restaurant.html"><div>Home - Restaurant</div></a></li>
-									<li><a href="index-events.html"><div>Home - Events</div></a></li>
-									<li><a href="index-parallax.html"><div>Home - Parallax</div></a></li>
-									<li><a href="index-app-showcase.html"><div>Home - App Showcase</div></a></li>
-									<li><a href="index-boxed.html"><div>Home - Boxed Layout</div></a></li>
-								</ul>
-							</li>
-							<li><a href="#"><div><i class="icon-file-alt"></i>Menu</div></a></li>
-							<li><a href="#"><div><i class="icon-users2"></i>Staff</div></a></li>
-							<li><a href="#"><div><i class="icon-picture"></i>Gallery</div></a></li>
-							<li><a href="#"><div><i class="icon-star3"></i>Reviews</div></a></li>
-							<li><a href="#"><div><i class="icon-pencil2"></i>Blog</div></a></li>
-							<li><a href="#"><div><i class="icon-map-marker2"></i>Contact</div></a></li>
-							<li><a href="#"><div><i class="icon-th"></i>Demos</div></a></li>
-						</ul>
-
-					</nav><!-- #primary-menu end -->-->
-
-				</div>
-
-			</div>
-
-		</header><!-- #header end -->
-
-		<div class="clear"></div>
-
-		<!-- Content
-		============================================= -->
-		<section id="content">
-
-			<div class="content-wrap">
+    <section>
+  				<div class = "containter" style="height: 456px;">
+            <img style="width:100%"src="images/馋猫骑士.png" style = " width:100%; height:100%;align:center"alt="" />
+				  </div>
 
 				<div class="container clearfix">
 
-					<div class="col_one_third nobottommargin">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/thumb/3.jpg" alt="Why choose Us?">
+					<div class="col_one_fifth nobottommargin">
+
+						<div class="feature-box fbox-center fbox-plain nobottomborder">
+              	<h1 style="margin-top:15px;font-family:fzzy;font-weight:bolder;">为什么选择馋猫?</h1>
+							<div style = "margin-bottom:10px" class="fbox-icon">
+								<a href="#"><img src="images/icon_money.png" alt="Icon" data-animate="zoomIn"></a>
 							</div>
-							<div class="fbox-desc">
-								<h3>ABOUT Chanmao.<span class="subtitle">Because we are Reliable.</span></h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
-							</div>
+							<h3 style="font-family:wryhb;font-weight:900;font-size:1.5em;">高工资<br>
+                <span style="font-family:wryh;font-weight:500;font-size:0.8em"class="subtitle">月入5000不是梦</span></h3>
 						</div>
 					</div>
 
-					<div class="col_one_third nobottommargin">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/thumb/16.jpg" alt="Why choose Us?">
+					<div  class="col_one_fifth nobottommargin">
+						<div class="feature-box fbox-center fbox-plain nobottomborder">
+							<div style = "margin-bottom:10px"class="fbox-icon" >
+								<a href="#"><img src="images/icon_address.png" alt="Icon" data-animate="zoomIn" data-delay="200"></a>
 							</div>
-							<div class="fbox-desc">
-								<h3>Our Goal.<span class="subtitle">To Redefine your Brand.</span></h3>
-								<p>Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque tempora ullam. Vitae delectus quia, consequuntur rerum molestias quo.</p>
-							</div>
+							<h3 style="font-family:wryhb;font-weight:900;font-size:1.5em;">多区域
+                  <span style="font-family:wryh; font-weight:500; margin-bottom:-10px;font-size:0.8em" class="subtitle" >无论你在哪里</span>
+                 <span style="font-family:clanprobk; font-weight:500;font-size:0.8em" class="subtitle">We Want You!</span>
+               </h3>
 						</div>
 					</div>
 
-					<div class="col_one_third nobottommargin col_last">
-						<div class="feature-box media-box">
-							<div class="fbox-media">
-								<img src="images/thumb/12.jpg" alt="Why choose Us?">
+					<div class="col_one_fifth nobottommargin">
+						<div class="feature-box fbox-center fbox-plain nobottomborder">
+							<div style = "margin-bottom:10px" class="fbox-icon">
+								<a href="#"><img src="images/icon_time.png" alt="Icon" data-animate="zoomIn" data-delay="400"></a>
 							</div>
-							<div class="fbox-desc">
-								<h3>What we can DO for U!<span class="subtitle">Make our Customers Happy.</span></h3>
-								<p>Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam. Accusamus perspiciatis asperiores labore esse ab accusantium ea modi ut.</p>
-							</div>
+              <h3 style="font-family:wryhb;font-weight:900;font-size:1.5em;">灵活的时间
+                <span  style="font-family:clanprobk; font-weight:600;font-size:0.8em;margin-bottom:-7px;"class="subtitle">Full-time/Part-time</span>
+                 <span  style="font-family:wryh; font-weight:500;font-size:0.8em" class="subtitle">任你选</span></h3>
 						</div>
 					</div>
 
-					<div class="clear"></div>
-
-				</div>
-
-				<div class="section dark bottommargin-lg" style="height: 500px;">
-					<div class="container center clearfix vertical-middle">
-
-						<i class="i-plain i-xlarge icon-food2 divcenter bottommargin"></i>
-
-						<div class="slider-caption slider-caption-center">
-							<h2 data-animate="fadeInUp">馋猫骑士<br>召集令</h2>
-							<p data-animate="fadeInUp" data-delay="200">"Momentum poverty tackling fellows social impact. Expanding community ownership, future affiliate protect civil society. Bloomberg."</p>
+					<div class="col_one_fifth nobottommargin col_last">
+						<div class="feature-box fbox-center fbox-plain nobottomborder">
+							<div style = "margin-bottom:10px" class="fbox-icon">
+								<a href="#"><img src="images/icon_tips.png" alt="Icon" data-animate="zoomIn" data-delay="600"></a>
+							</div>
+							<h3 style="font-family:wryhb;font-weight:900;font-size:1.5em;">单多小费全部进包
+                <span style="font-family:wryh; font-weight:500;font-size:0.8em"class="subtitle">运费 &amp; 小费全收<br>多劳多得</span>
+              </h3>
 						</div>
-
-					</div>
-					<div class="video-wrap">
-						<video poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
-							<source src='images/videos/explore.mp4' type='video/mp4' />
-							<source src='images/videos/explore.webm' type='video/webm' />
-						</video>
-						<div class="video-overlay" style="background-color: rgba(0,0,0,0.35);"></div>
 					</div>
 				</div>
 
-				<div class="container clearfix">
-         	<h3>Why CHoose Chanmao?</h3>
-					<div class="col_one_fourth nobottommargin">
-						<div class="feature-box fbox-center fbox-plain nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><img src="images/icons/glass.png" alt="Icon" data-animate="zoomIn"></a>
-							</div>
-							<h3>高工资<span class="subtitle">月入5000不是梦</span></h3>
-						</div>
-					</div>
-
-					<div class="col_one_fourth nobottommargin">
-						<div class="feature-box fbox-center fbox-plain nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><img src="images/icons/fork.png" alt="Icon" data-animate="zoomIn" data-delay="200"></a>
-							</div>
-							<h3>多区域<span class="subtitle">无论你在哪里<br> We Want YOU!</span></h3>
-						</div>
-					</div>
-
-					<div class="col_one_fourth nobottommargin">
-						<div class="feature-box fbox-center fbox-plain nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><img src="images/icons/cup.png" alt="Icon" data-animate="zoomIn" data-delay="400"></a>
-							</div>
-							<h3>灵活的时间<span class="subtitle">Full-time/Parttime 任你选</span></h3>
-						</div>
-					</div>
-
-					<div class="col_one_fourth nobottommargin col_last">
-						<div class="feature-box fbox-center fbox-plain nobottomborder">
-							<div class="fbox-icon">
-								<a href="#"><img src="images/icons/tea.png" alt="Icon" data-animate="zoomIn" data-delay="600"></a>
-							</div>
-							<h3>单多小费全部进包<span class="subtitle">运费 &amp; 小费全收<br>多劳多得</span></h3>
-						</div>
-					</div>
-
-					<div class="clear"></div>
-
-				</div>
-
-        <div  class="section nobg topmargin-lg nobottommargin">
-          <div class="container clearfix" >
-            <div align = "center">
-
-              <img src="http://valleyroyals.org/wp-content/uploads/2012/08/Interested-in-Joining-button.jpg" alt="Image" data-animate="fadeInLeft">
-
+        <div>
+          <div class="container" >
+            <div style="margin-bottom:40px;">
+              <img src="images/Interestedinjoining.png" alt="Image" data-animate="fadeInLeft">
             </div>
-            <div align = "center">
+            <div align = "left">
              <form role = "form" ng-submit = "dhc.driverApplySubmit()">
-              <p>姓名<span>*</span></p>
-              <input type="text" size = "40" ng-model="dhc.applyDriver.name">
-              <p>住址<span>*</span></p>
-              <input  type="text"size = "40" ng-model="dhc.applyDriver.address">
-              <p>手机<span>*</span></p>
-              <input  type="text" size = "40" ng-model="dhc.applyDriver.tel" >
-              <p>邮箱<span>*</span></p>
-              <input  type="text" size = "40" ng-model="dhc.applyDriver.email" >
-              <p>身份</p>
-              <div>
-                <label ng-repeat= "status in dhc.statusOptions">
-                 <input type = "checkbox"
-                        ng-model = "status.selected" ng-change="dhc.setStatus()"
-                        ng-click="dhc.statusSelection($index, dhc.statusOptions)">
-                        {{status.optionName}}
-                </input>
-                 </label>
-              </div>
-              <p>有无工卡</p>
-              <div>
-                <label ng-repeat= "sin in dhc.sinOptions">
-                  <input type = "checkbox"
-                        ng-model = "sin.selected" ng-change="dhc.setSin()"
-                        ng-click="dhc.sinSelection($index, dhc.sinOptions)" >
-                        {{sin.optionName}}
-                  </input>
-                </label>
-              </div>
-              <p>有无服务行业经验(例如送餐,服务员,客服,销售等)</p>
-                <div>
-                  <label ng-repeat= "experience in dhc.experienceOptions">
+               <div class="form-group" style="margin-top:10px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">姓名</span>
+                 <input  class="form-control" style="margin-top:5px;" type="text" size = "40" ng-model="dhc.applyDriver.name">
+               </div>
+               <div class="form-group" style="margin-top:5px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">住址(选填)</span>
+                 <input   class="form-control" style="margin-top:5px;"type="text"size = "40" ng-model="dhc.applyDriver.address">
+               </div>
+               <div  class="form-group" style="margin-top:5px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">手机(请输入数字)</span>
+                 <input  class="form-control"  style="margin-top:5px;"type="text" size = "40" phone-input ng-model="dhc.applyDriver.tel">
+               </div>
+               <div  class="form-group" style="margin-top:5px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">邮箱</span>
+                 <input  class="form-control" style="margin-top:5px;"type="email" size = "40" ng-model="dhc.applyDriver.email" >
+               </div>
+               <div  style="margin-top:10px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">身份</span>
+                 <HR style="border:1 dashed #000000"; width="100%;margin-top:-3px;margin-bottom:-3px; " color=#000000 SIZE=1 >
+                 <div style="margin-top:7px;">
+                   <label ng-repeat= "status in dhc.statusOptions">
                     <input type = "checkbox"
-                          ng-model = "experience.selected" ng-change="dhc.setExperience()"
-                          ng-click="dhc.experienceSelection($index, dhc.experienceOptions)">
-                          {{experience.optionName}}
+                           ng-model = "status.selected" ng-change="dhc.setStatus()"
+                           ng-click="dhc.statusSelection($index, dhc.statusOptions)"
+                           >
+                           <span style = "font-family:wryh;font-size:1.1em;font-weight:600">{{status.optionName}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </input>
-                  </label>
+                   </label>
+                 </div>
+               </div>
+               <div  style="margin-top:10px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">工卡(SIN)</span>
+                 <HR style="border:1 dashed #000000" width="100%" color=#000000 SIZE=1>
+                 <div style="margin-top:7px;">
+                   <label ng-repeat= "sin in dhc.sinOptions">
+                     <input type = "checkbox"
+                           ng-model = "sin.selected" ng-change="dhc.setSin()"
+                           ng-click="dhc.sinSelection($index, dhc.sinOptions)" >
+                           <span style = "font-family:wryh;font-size:1.1em;font-weight:600">{{sin.optionName}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   </label>
+                 </div>
+               </div>
+               <div  style="margin-top:10px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">服务行业经验</span>
+                 <br><span style="font-family:wryh;color:#4e8db7; font-size:1em;font-weight:700">(例如送餐,服务员,客服,销售等)</span>
+                 <HR style="border:1 dashed #000000" width="100%" color=#000000 SIZE=1>
+                   <div style="margin-top:7px;">
+                     <label ng-repeat= "experience in dhc.experienceOptions">
+                       <input type = "checkbox"
+                             ng-model = "experience.selected" ng-change="dhc.setExperience()"
+                             ng-click="dhc.experienceSelection($index, dhc.experienceOptions)">
+                             <span style = "font-family:wryh;font-size:1.1em;font-weight:600">{{experience.optionName}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </input>
+                     </label>
+                   </div>
+               </div>
+               <div  style="margin-top:10px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">工作区域</span>
+                 <HR style="border:1 dashed #000000" width="100%" color=#000000 SIZE=1>
+                 <div style="margin-top:7px;font-family:wryh;color:lightblue; font-size:1.2em;font-weight:800">
+                   <label ng-repeat= "area in dhc.areaOptions">
+                     <input type = "checkbox"
+                           ng-model = "area.selected" ng-change="dhc.setArea()">
+                           <span style = "font-family:clanprobk;font-size:1.0em;font-weight:600">{{area.optionName}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                   </label>
+                 </div>
+               </div>
+               <div  style="margin-top:10px;">
+                 <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">期望的工作时间</span>
+                 <HR style="border:1 dashed #000000" width="100%" color=#000000 SIZE=1>
+                 <div style="margin-top:7px;">
+                   <label ng-repeat= "hour in dhc.hourOptions">
+                     <input type = "checkbox"
+                           ng-model = "hour.selected" ng-change="dhc.setHour()"  >
+                           <span style="white-space:pre-wrap;font-family:clanprobk,wryh;font-size:1em;font-weight:600"> {{hour.optionName}}</span>&nbsp;&nbsp;<br>
+                     </input>
+                   </label>
+                 </div>
+               </div>
+               <div style="margin-top:10px;">
+                <span style="font-family:wryh;color:#4e8db7; font-size:1.2em;font-weight:800">自我评价</span><br>
 
-                </div>
-              <p>工作区域</p>
-              <div>
-                <label ng-repeat= "area in dhc.areaOptions">
-                  <input type = "checkbox"
-                        ng-model = "area.selected" ng-change="dhc.setArea()">
-                        {{area.optionName}}<br>
-                  </input>
-                </label>
+                <textarea class="form-control"style="margin-top:7px;" ng-model="dhc.applyDriver.comments" maxlength="500" cols="40" rows="5"></textarea>
               </div>
-              <p>期望的工作时间</p>
-              <div>
-                <label ng-repeat= "hour in dhc.hourOptions">
-                  <input type = "checkbox"
-                        ng-model = "hour.selected" ng-change="dhc.setHour()"  >
-                        <span style="white-space:pre-wrap;"> {{hour.optionName}}</span><br>
-                  </input>
-                </label>
-              </div>
-              <div>
-                <p>
-                  自我评价
-                </p>
-              <textarea  ng-model="dhc.applyDriver.comments" maxlength="1000" cols="40" rows="10"></textarea>
-              </div>
-              <input type="submit" ng-click= "dhc.outPutDriver()">
+           <button type="submit" ng-click= "dhc.outPutDriver()" name="button" ng-disabled="dhc.buttonDisabled"
+             style="margin-top:20px;margin-left:8%;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    padding-right: 0px;
+                    padding-left: 0px;
+                    border-right-width: 0px;
+                    border-top-width: 0px;
+                    border-bottom-width: 0px;
+                    border-left-width: 0px;
+                    background-color:white;"><img src="images/submit.png" alt="submit" /></button>
+
              </form>
             </div>
-
-
-
-			<!--	<div class="section nobg notopmargin noborder bottommargin-sm">
-					<div class="container clearfix">
-
-						<div class="col_half nobottommargin">
-
-							<div class="heading-block" style="padding-top: 40px;">
-
-								<h2>You'll be Lovin' It.</h2>
-								<span>Duis mollis, est non commodo luctus. Donec sed odio dui</span>
-
-							</div>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, repudiandae, maxime, earum, sapiente assumenda non odit laborum qui vero vel quos sint excepturi in laudantium.</p>
-
-							<a href="#" class="button button-border button-large button-rounded topmargin-sm noleftmargin">More Details</a>
-
-						</div>
-
-						<div class="col_half bottommargin-sm center col_last">
-
-							<img src="images/22.png" alt="Image" data-animate="fadeInRight">
-
-						</div>
-
-					</div>
-				</div>
-
-				<div class="container clearfix">
-
-					<div class="col_one_fourth nobottommargin">
-
-						<div class="fancy-title title-border">
-							<h4>Opening Hours</h4>
-						</div>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur facilis cumque amet suscipit odio.</p>
-
-						<ul class="iconlist nobottommargin">
-							<li><i class="icon-time color"></i> <strong>Mondays-Fridays:</strong> 10AM to 7PM</li>
-							<li><i class="icon-time color"></i> <strong>Saturdays:</strong> 11AM to 3PM</li>
-							<li><i class="icon-time text-danger"></i> <strong>Sundays:</strong> Closed</li>
-						</ul>
-
-					</div>
-
-					<div class="col_one_fourth nobottommargin">
-
-						<div class="fancy-title title-border">
-							<h4>Our Buffet Menu</h4>
-						</div>
-
-						<p>Our Buffet Menu is unique &amp; filling consisting of different types of 5 Starters, 12 Full-Course Dishes, 9 Desserts &amp; 3 Mocktails which you are gonna relish to the core.</p>
-
-						<a href="#" class="button button-rounded button-dark noleftmargin"><i class="icon-file-alt"></i> Browse Menu</a>
-
-					</div>
-
-					<div class="col_half nobottommargin col_last">
-
-						<div class="fancy-title title-border">
-							<h4>Gallery</h4>
-						</div>
-
-						<div class="masonry-thumbs col-4 clearfix" data-lightbox="gallery" style="width: 100.3%;">
-							<a href="images/3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/3.jpg" alt="Gallery Thumb 1" data-animate="zoomIn"></a>
-							<a href="images/5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/5.jpg" alt="Gallery Thumb 2" data-animate="zoomIn" data-delay="100"></a>
-							<a href="images/6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/6.jpg" alt="Gallery Thumb 3" data-animate="zoomIn" data-delay="200"></a>
-							<a href="images/7.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/7.jpg" alt="Gallery Thumb 4" data-animate="zoomIn" data-delay="300"></a>
-							<a href="images/8.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/8.jpg" alt="Gallery Thumb 5" data-animate="zoomIn" data-delay="400"></a>
-							<a href="images/10.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/10.jpg" alt="Gallery Thumb 6" data-animate="zoomIn" data-delay="500"></a>
-							<a href="images/11.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/11.jpg" alt="Gallery Thumb 7" data-animate="zoomIn" data-delay="600"></a>
-							<a href="images/12.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/thumb/gallery/12.jpg" alt="Gallery Thumb 8" data-animate="zoomIn" data-delay="700"></a>
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="section parallax noborder dark footer-stick topmargin-lg" style="background-image: url('images/4.jpg'); padding: 80px 0;" data-stellar-background-ratio="0.3">
-					<div class="container clearfix">
-						<div class="col_three_fifth nobottommargin">
-
-							<div class="heading-block nobottomborder">
-								<h3>Reviews</h3>
-							</div>
-
-							<div class="fslider restaurant-reviews" data-arrows="false" data-animation="slide">
-								<div class="flexslider">
-									<div class="slider-wrap">
-										<div class="slide">
-											<p class="lead">"Globalization fairness non-partisan visionary, institutions Aga Khan resolve. Results public-private partnerships, international development elevate scalable."</p>
-											<span><strong>John Doe</strong>, New York Magazine</span><br>
-											<i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star-half-full"></i>
-										</div>
-										<div class="slide">
-											<p class="lead">"Medicine; experience in the field climate change achieve voice public-private partnerships process our ambitions. Sanitation."</p>
-											<span><strong>Mary Jane</strong>, Chicago News</span><br>
-											<i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star-half-full"></i> <i class="icon-star-empty"></i>
-										</div>
-										<div class="slide">
-											<p class="lead">"Healthcare forward-thinking public service, social innovation making progress. Arab Spring social analysis, equality treatment, diversification."</p>
-											<span><strong>Luis Frank</strong>, France</span><br>
-											<i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star3"></i> <i class="icon-star-empty"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<style>
-								.restaurant-reviews .flex-control-nav {
-									top: auto;
-									bottom: 25px;
-								}
-							</style>
-
-						</div>
-					</div>
-				</div>
-
-			</div>-->
-
-		</section><!-- #content end -->
-
-		<!-- Footer
-		============================================= -->
+    </section><!-- #content end -->
 		<footer id="footer" class="dark">
 
 			<div class="container">
-
 				<!-- Footer Widgets
 				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
 
-					<div class="col_full">
+					<div class="col_full center">
+              <div style="margin-top:35px; margin-bottom:20px;" >
+                <a href="#"><img src="images/icon_cat.png" alt="Icon" data-animate="zoomIn" data-delay="200"></a>
+              </div>
+              <p style="font-family:wryhb;font-weight:900;font-size:1.5em; margin-bottom:-2px;">联系我们</p>
+              <p style="font-family:clanprobk;font-weight:900;font-size:1.2em;">CONTACT US</p>
+              <h3 style="font-family:clanprobk;font-weight:900;font-size:1.3em;">phil@chanmao.ca</h3>
 
-						<div class="heading-block center nobottommargin">
-							<h2>Need more details or wanna talk in person? <br><strong> Call +123-456-7890</strong></h2>
-						</div>
-
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
+			  </div><!-- .footer-widgets-wrap end -->
+		  </div>
 
 			<!-- Copyrights
 			============================================= -->
@@ -732,52 +453,11 @@
 				<div class="container clearfix">
 
 					<div class="col_half">
-						Copyrights &copy; 2014 All Rights Reserved by Canvas Inc.<br>
-						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					<span style="font-family:clanprobk;color:white">Chanmao Inc. </span><span style="font-family:wryhb;color:white">版权所有</span>
+
 					</div>
 
-					<div class="col_half col_last tright">
-						<div class="fright clearfix">
-							<a href="#" class="social-icon si-small si-borderless si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
 
-							<a href="#" class="social-icon si-small si-borderless si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-gplus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-pinterest">
-								<i class="icon-pinterest"></i>
-								<i class="icon-pinterest"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-vimeo">
-								<i class="icon-vimeo"></i>
-								<i class="icon-vimeo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-github">
-								<i class="icon-github"></i>
-								<i class="icon-github"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-yahoo">
-								<i class="icon-yahoo"></i>
-								<i class="icon-yahoo"></i>
-							</a>
-
-							<a href="#" class="social-icon si-small si-borderless si-linkedin">
-								<i class="icon-linkedin"></i>
-								<i class="icon-linkedin"></i>
-							</a>
-						</div>
 
 						<div class="clear"></div>
 
@@ -789,7 +469,6 @@
 
 		</footer><!-- #footer end -->
 
-	</div><!-- #wrapper end -->-->
 
 	<!-- Go To Top
 	============================================= -->
